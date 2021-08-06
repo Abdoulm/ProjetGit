@@ -1,0 +1,82 @@
+
+maiga.abdoul@DCIREODCPR17 MINGW64 ~
+$ git --version
+git version 2.32.0.windows.2
+
+maiga.abdoul@DCIREODCPR17 MINGW64 ~
+$ cd D:/
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d
+$ mkdir ProjetGit
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d
+$ cd ProjetGit/
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit
+$ touch lisezmoi.txt
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit
+$ ls
+lisezmoi.txt
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit
+$ pwd
+/d/ProjetGit
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit
+$ ls
+lisezmoi.txt
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit
+$ git init
+Initialized empty Git repository in D:/ProjetGit/.git/
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (master)
+$ git remote add origin https://github.com/Abdoulm/ProjetGit.git
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (master)
+$ git remote -v
+origin  https://github.com/Abdoulm/ProjetGit.git (fetch)
+origin  https://github.com/Abdoulm/ProjetGit.git (push)
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (master)
+$ git add .
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (master)
+$ git commit -m "first commit"
+[master (root-commit) ca4c5c9] first commit
+ Committer: Abdoul Maiga <maiga.abdoul@odc.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 lisezmoi.txt
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Abdoulm/ProjetGit.git'
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (master)
+$ git branch -M main
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Abdoulm/ProjetGit.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+maiga.abdoul@DCIREODCPR17 MINGW64 /d/ProjetGit (main)
